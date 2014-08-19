@@ -29,7 +29,22 @@
                                     <segment title="Attack"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmentChange:" destination="LVB-YS-i5n" eventType="valueChanged" id="I2f-G9-q1T"/>
+                                    <action selector="animateTypeSegmentChange:" destination="LVB-YS-i5n" eventType="valueChanged" id="bMK-Vl-0sJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="opH-jh-xUj">
+                                <rect key="frame" x="10" y="520" width="300" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="RTv-VX-bzH"/>
+                                    <constraint firstAttribute="width" constant="300" id="vBZ-b6-uKT"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="8 directions animation"/>
+                                    <segment title="face to direction"/>
+                                </segments>
+                                <connections>
+                                    <action selector="heroTypeSegmentChange:" destination="LVB-YS-i5n" eventType="valueChanged" id="vIj-aB-3i4"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -37,6 +52,8 @@
                         <constraints>
                             <constraint firstItem="iAa-fO-e1Q" firstAttribute="top" secondItem="TvN-0d-DFh" secondAttribute="bottom" constant="20" id="9cW-v4-X4M"/>
                             <constraint firstAttribute="centerX" secondItem="iAa-fO-e1Q" secondAttribute="centerX" id="Ejd-Wj-EKQ"/>
+                            <constraint firstItem="aVg-JY-jeM" firstAttribute="top" secondItem="opH-jh-xUj" secondAttribute="bottom" constant="20" id="Tdg-l8-esl"/>
+                            <constraint firstAttribute="centerX" secondItem="opH-jh-xUj" secondAttribute="centerX" id="dLg-xD-jJl"/>
                         </constraints>
                     </view>
                 </viewController>

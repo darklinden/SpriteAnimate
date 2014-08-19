@@ -48,11 +48,18 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (IBAction)segmentChange:(id)sender
+- (IBAction)animateTypeSegmentChange:(id)sender
 {
     SKView * skView = (SKView *)self.view;
     MyScene * scene = (MyScene *)skView.scene;
-    scene.type = (AnimateType)[(UISegmentedControl *)sender selectedSegmentIndex];
+    scene.animateType = (AnimateType)[(UISegmentedControl *)sender selectedSegmentIndex];
+}
+
+- (IBAction)heroTypeSegmentChange:(id)sender
+{
+    SKView * skView = (SKView *)self.view;
+    MyScene * scene = (MyScene *)skView.scene;
+    scene.heroType = (HeroType)[(UISegmentedControl *)sender selectedSegmentIndex];
 }
 
 @end

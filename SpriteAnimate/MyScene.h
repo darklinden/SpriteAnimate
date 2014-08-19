@@ -7,15 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "Hero.h"
 
-typedef NS_ENUM(NSUInteger, AnimateType) {
-    AnimateTypeStay = 0,
-    AnimateTypeRun = 1,
-    AnimateTypeAtk = 2
-};
 
 @interface MyScene : SKScene
 
-@property (nonatomic, assign) AnimateType type;
+@property (nonatomic, assign) HeroType      heroType;
+@property (nonatomic, assign) AnimateType   animateType;
 
 @end
