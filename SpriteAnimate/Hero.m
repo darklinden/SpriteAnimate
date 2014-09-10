@@ -118,6 +118,7 @@
     switch (heroType) {
         case HeroTypeEightDirection:
         {
+            self.zRotation = 0;
             EightDirection dr = [self directionTypeFromAngle:angle];
             NSArray *animate = nil;
             
@@ -129,7 +130,7 @@
                     animate = run[@(dr)];
                     break;
                 case AnimateTypeStay:
-                    animate = run[@(dr)];
+                    animate = stay[@(dr)];
                     break;
                 default:
                     break;
